@@ -201,11 +201,20 @@ p {
 	background-color: #cbdedd;
 	height: 800px;
 	width: 100%;
+	position: relative;
 }
 
 
 .logos {
 	margin-top: 270px;
+}
+
+.portfolio-arrow {
+	position: absolute;
+	left: 49%;
+	bottom: 0;
+	height: 22px;
+	margin-bottom: 20px;
 }
 
 @media (max-width: 1370px){
@@ -224,6 +233,7 @@ p {
 	background-color: #fff;
 	height: 800px;
 	width: 100%;
+	position: relative;
 }
 
 .icons {
@@ -231,17 +241,27 @@ p {
 	margin-top: 200px;
 }
 
+
 .process-icon {
 	width: 75%;
-
 }
 
+.process-arrow {
+	position: absolute;
+	left: 49%;
+	bottom: 0;
+	height: 22px;
+	margin-bottom: 20px;
+}
 
 @media (max-width: 1370px){
 	#process {
 		height: 650px;
 	}
 
+	.icons {
+		margin-top: 170px;
+	}
 }
 
 /****** CONTACT STYLE ******/
