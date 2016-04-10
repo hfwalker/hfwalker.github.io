@@ -69,6 +69,7 @@ header {
 	text-align: center;
 	font-family: "Raleway", sans-serif;
 	text-transform: uppercase;
+	position: relative;
 }
 
 
@@ -90,7 +91,11 @@ h2 {
 }
 
 .arrow {
-	margin-top: 45px;
+	position: absolute;
+	left: 49%;
+	bottom: 0;
+	height: 22px;
+	margin-bottom: 20px;
 }
 
 
@@ -106,10 +111,31 @@ h2 {
 	h2 {
 		margin-top: -150px;
 	}
+}
+
+@media (max-width: 750px) { 
+	header {
+		height: 240px;
+	}
+
+	h1 {
+		font-size: 35px;
+		line-height: 200px;
+	}
+
+	h2 {
+		font-size: 18px;
+		margin-top: -50px;
+	}
+
+	nav {
+		display: none;
+	}
 
 	.arrow {
-		margin-top: 70px;
+		display: none;
 	}
+
 }
 
 
@@ -133,12 +159,21 @@ p {
 	text-align: left;
 }
 
+@media (max-width: 750px) {
+	h3 {
+		font-size: 30px;
+		padding-top: 25px;
+	}
+}
+
+
 /****** ABOUT STYLE ******/
 
 #about {
 	background-color: #fff;
 	height: 800px;
 	width: 100%;
+	position: relative;
 }
 
 .about-section {
@@ -160,10 +195,11 @@ p {
 }
 
 #about .arrow {
-	display: block;
-	margin-top: 150px;
-	margin-left: auto;
-	margin-right: auto; 
+	position: absolute;
+	left: 49%;
+	bottom: 0;
+	height: 22px;
+	margin-bottom: 20px;
 }
 
 
@@ -189,9 +225,26 @@ p {
 	.hilary {
 		width: 65%;
 	}
+}
 
-	#about .arrow {
-		margin-top: 100px;
+@media (max-width: 750px) {
+	#about {
+		height: 800px;
+	}
+
+	.hilary {
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto
+	}
+
+	.about-div {
+		width: 90%;
+		margin-top: 50px;
+	}
+
+	p {
+		text-align: center;
 	}
 }
 
@@ -207,6 +260,13 @@ p {
 
 .logos {
 	margin-top: 270px;
+
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
 }
 
 .portfolio-arrow {
@@ -224,6 +284,28 @@ p {
 
 	.logos {
 		margin-top: 200px;
+	}
+}
+
+@media (max-width: 750px) {
+	#portfolio {
+		height: 1050px;
+	}
+
+	.logos {
+		margin-top: 25px;
+	}
+
+	.bpm-logo {
+		margin-top: 50px;
+	}
+
+	.ovia-logo {
+		margin-top: 50px;
+	}
+
+	.portfolio-arrow {
+		display: none;
 	}
 }
 
@@ -264,12 +346,33 @@ p {
 	}
 }
 
+@media (max-width: 750px) {
+	#process {
+		height: 1800px;
+	}
+
+	.process-icon {
+		width: 40%;
+		display: block;
+    	margin-left: 80px;
+	}
+
+	.icons {
+		margin-top: 10px;
+	}
+
+	.process-arrow {
+		display: none;
+	}
+}
+
 /****** CONTACT STYLE ******/
 
 #contact {
 	background-color: #cbdedd;
 	height: 800px;
 	width: 100%;
+	position: relative;
 }
 
 #contact a {
@@ -296,11 +399,12 @@ p {
 
 
 .up-arrow {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 250px; 
-	}
+	position: absolute;
+	left: 48%;
+	bottom: 0;
+	height: 45px;
+	margin-bottom: 30px;
+}
 
 
 @media (max-width: 1370px) {
@@ -322,4 +426,30 @@ p {
 	}
 }
 
+@media (max-width: 750px)  {
+	.buttons {
+		margin-top: 50px;
+	}
+
+	.pull-right { 
+    float: none!important; 
+	}
+
+	.pull-left { 
+    float: none!important; 
+	}
+
+	.resume-button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto; 
+		margin-top: 25px;
+	}
+
+	.contact-button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto; 
+	}
+}
 
