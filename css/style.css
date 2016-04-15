@@ -249,12 +249,19 @@ p {
 	}
 
 	.about-div {
-		width: 90%;
+		width: 100%;
 		margin-top: 50px;
+
 	}
 
 	p {
 		text-align: center;
+	}
+}
+
+@media (max-width: 350px) {
+	#about {
+		height: 900px;
 	}
 }
 
@@ -373,6 +380,12 @@ p {
 
 	.process-arrow {
 		display: none;
+	}
+}
+
+@media (max-width: 350px) {
+	#process {
+		height: 1450px;
 	}
 }
 
